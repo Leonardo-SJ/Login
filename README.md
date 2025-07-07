@@ -2,6 +2,8 @@
 ## Descripcion
 Este login te permite introducir una contraseña y un usuario sin son correctos te muestra este repositorio
 
+## Componentes
+Se compone de un index.html, el style.css ubicado en la carpeta css y de un js llamado LOGIN.js que esta en la carpeta js
 Función (Expresión de Función Invocada Inmediatamente - IIFE)
 (function () { ... })();:
 
