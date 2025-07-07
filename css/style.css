@@ -1,0 +1,132 @@
+/* Importa una fuente de Google Fonts para un aspecto más moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Estilos Generales del Body */
+body {
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
+    background: linear-gradient(to right top, #6a11cb, #2575fc); /* Degradado de fondo */
+    color: #333; /* Color de texto por defecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo (moderno) */
+    -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+}
+
+/* Estilos de la tarjeta de login */
+.card {
+    border: none; /* Elimina el borde por defecto de la tarjeta de Bootstrap */
+    background: transparent; /* Fondo transparente para que se vea el fondo del contenedor */
+    box-shadow: none; /* Elimina la sombra por defecto, ya la tiene el contenedor */
+}
+
+.card h2 {
+    color: #4a4a4a; /* Color para el título del formulario */
+    font-weight: 700; /* Más peso para el título */
+    margin-bottom: 30px !important; /* Espacio extra debajo del título */
+}
+
+/* Estilos para las etiquetas de los formularios */
+.form-label {
+    font-weight: 600; /* Más peso para las etiquetas */
+    color: #555;
+}
+
+/* Estilos para los campos de entrada */
+.form-control {
+    border-radius: 8px; /* Bordes más redondeados para los inputs */
+    padding: 10px 15px; /* Más padding para que sean más altos */
+    border: 1px solid #ccc;
+    transition: all 0.3s ease; /* Transición suave para los estados de focus */
+}
+
+.form-control:focus {
+    border-color: #6a11cb; /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25); /* Sombra al enfocar */
+}
+
+/* Estilos para el botón de enviar */
+.btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Degradado en el botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 20px; /* Más padding */
+    font-size: 1.1rem; /* Fuente más grande */
+    font-weight: 600; /* Más peso */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones al hover */
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px); /* Pequeño levantamiento al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+    background: linear-gradient(to left, #6a11cb, #2575fc); /* Invertir degradado al pasar el ratón */
+}
+
+/* Estilos para enlaces de texto (olvidaste contraseña, registrarse) */
+p.text-center a,
+p.text-center {
+    color: #6a11cb; /* Color morado para los enlaces */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+p.text-center a:hover {
+    color: #2575fc; /* Color azul al pasar el ratón */
+    text-decoration: underline; /* Subraya al pasar el ratón */
+}
+
+p.text-center.text-muted {
+    color: #777 !important; /* Color para el texto "No tienes una cuenta?" */
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Estilos para el selector de idioma */
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25);
+}
+
+/* Estilos para el feedback de validación (Bootstrap ya lo maneja bien, esto es solo un ajuste si lo necesitaras) */
+.invalid-feedback {
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Media Queries para responsividad (ejemplo para pantallas pequeñas) */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .card {
+        padding: 20px !important;
+    }
+    .card h2 {
+        font-size: 1.8rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
