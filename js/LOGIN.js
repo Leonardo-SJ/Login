@@ -73,7 +73,7 @@ async function traducirPagina(idiomaDestino) {
         if (form.checkValidity()) {
           // *** Si el formulario es válido, aquí ocurre la redirección ***
           // Puedes cambiar 'pagina_destino.html' por la URL a la que quieres redirigir
-          window.location.href = 'https://github.com/Leonardo-SJ/Loginl';
+          window.location.href = 'https://github.com/Leonardo-SJ/Login';
         }
       }, false);
     })();
