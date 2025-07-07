@@ -43,3 +43,9 @@ event.stopPropagation(): Método que evita que el evento se propague a los eleme
 form.classList.add('was-validated'): Método que añade la clase was-validated al formulario. Esta clase de Bootstrap activa la visualización de la retroalimentación de validación (como bordes rojos y mensajes de error) basándose en las reglas de validación de HTML5.
 form.checkValidity(): Método que comprueba si todos los elementos de entrada del formulario cumplen sus restricciones de validación (por ejemplo, required, pattern, type="email"). Devuelve true si es válido, false en caso contrario.
 window.location.href = 'https://github.com/Leonardo-SJ/Login';: Método (establecer una propiedad) que redirige el navegador a la URL especificada cuando el formulario es válido.
+
+## Capturas de pantallas
+![image](https://github.com/user-attachments/assets/9ee82223-2734-45a4-a5c6-6d0c9de5037b)
+
+## GitHub Pages:
+https://leonardo-sj.github.io/Login/
